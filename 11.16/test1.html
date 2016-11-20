@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>驼峰命名</title>
+</head>
+<script type="text/javascript">
+	var mystr="I lOve javasCript";
+	var a=mystr.toLowerCase().split(" ");
+    
+	 // document.write(a+"<br>");
+	for (var i=0;  i <= a.length - 1;i++) {
+         
+       a[i] =a[i][0].toUpperCase() +a[i].substring(1,a[i].length);
+       
+    }
+       document.write(a.join(" "));
+
+
+       
+       //str[0].toUpperCase() + str.toLowerCase().slice(1);
+      // document.write(mystr);
+
+
+		
+
+  
+         
+	
+
+
+
+//构造函数
+	/*function titleCase(str) {
+
+  var array = str.toLowerCase().split(" ");
+  for (var i = 0; i < array.length; i++){
+    array[i] = array[i][0].toUpperCase() + array[i].substring(1, array[i].length);
+
+    //array[i][0] = array[i][0] + 'A' - 'a';
+  }
+  var string = array.join(" ");
+
+  return string;
+}
+
+titleCase("I'm a little tea pot");
+document.write(string);*/
+	 
+</script>
+<body>
+
+</body>
+</html>

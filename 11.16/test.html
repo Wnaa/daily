@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>排序</title>
+</head>
+<script type="text/javascript">
+	var a=new Array();
+	a[0]=1;
+	a[1]=10;
+	a[2]=3;
+	a[3]=120;
+	for (var j=0; j <a.length ;  j++)
+	  for (var i = 0; i < a.length-j; i++) {
+	     if (a[i]>a[i+1]) {
+	     	var  ma=a[i+1];
+	     	a[i+1]=a[i];
+	     	a[i]=ma;
+	     }
+	     // var mymax=Math.max(a[i],a[i+1]);
+	     // a[i]=mymax;
+	    
+	   } 
+	   for (var i=0;i<a.length;i++) {
+	   	document.write(a[i]+"<br>");
+	   }
+    
+	
+
+</script>
+<body>
+
+</body>
+</html>
